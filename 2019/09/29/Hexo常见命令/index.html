@@ -27,19 +27,13 @@
 
 
 
-安装
-配置
-使用
 
 
 
 
 
 
-安装首先安装hexo-toc的插件，代码如下：
-1npm install hexo-toc --save
-
-配置然后，配置一下${HEXO_HOME}站点...">
+1234567hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo...">
 
 
 <meta name="robots" content="all">
@@ -50,7 +44,7 @@
 
 <title>
     
-    Hexo支持TOC效果 |
+    Hexo常见命令 |
     
     Hexo
 </title>
@@ -162,16 +156,16 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Hexo支持TOC效果">
+        <h1 id="Hexo常见命令">
             
-            Hexo支持TOC效果
+            Hexo常见命令
             
         </h1>
         <div class="post-meta">
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a class="category-link" href="/categories/工具/">工具</a>
+        
     </span>
     
     
@@ -208,27 +202,20 @@
 
 <!-- toc -->
 
-<ul>
-<li><a href="#an-zhuang">安装</a></li>
-<li><a href="#pei-zhi">配置</a></li>
-<li><a href="#shi-yong">使用</a></li>
-</ul>
+
+
 <!-- tocstop -->
 
 </div>
 
 
-<h1><span id="an-zhuang">安装</span><a href="#an-zhuang" class="header-anchor"></a></h1><p>首先安装hexo-toc的插件，代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
 
-<h1><span id="pei-zhi">配置</span><a href="#pei-zhi" class="header-anchor"></a></h1><p>然后，配置一下${HEXO_HOME}站点配置文件_config.yml:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim $&#123;HEXO_HOME&#125;/_config.yml</span><br><span class="line"></span><br><span class="line">toc:</span><br><span class="line">  maxdepth: 3</span><br><span class="line">  class: toc</span><br><span class="line">  slugify: transliteration</span><br><span class="line">  decodeEntities: false</span><br><span class="line">  anchor:</span><br><span class="line">    position: after</span><br><span class="line">    symbol: &apos;#&apos;</span><br><span class="line">    style: header-anchor</span><br></pre></td></tr></table></figure>
+<p>缩写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>symbol的#可以去掉</li>
-</ul>
-<h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor"></a></h1><p>在Markdown文章中加入TOC的占位符：以前[toc][TOC]改成下面的方式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
+<p>组合命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
     </div>
     
     <div class="post-footer">
@@ -246,17 +233,11 @@
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
-    <a href="/2019/09/29/Hexo常见命令/" class="pre-post btn btn-default" title='Hexo常见命令'>
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            Hexo常见命令</span>
-    </a>
     
-    
-    <a href="/2019/09/29/测试文章/" class="next-post btn btn-default" title='Hexo发布文章'>
+    <a href="/2019/09/29/Hexo支持TOC效果/" class="next-post btn btn-default" title='Hexo支持TOC效果'>
         <span class="hidden-lg">下一篇</span>
         <span class="hidden-xs">
-            Hexo发布文章</span><i class="fa fa-angle-right fa-fw"></i>
+            Hexo支持TOC效果</span><i class="fa fa-angle-right fa-fw"></i>
     </a>
     
 </div>
@@ -295,7 +276,7 @@ new Valine({
             文章目录
         </h3>
         
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">使用</span></a></li></ol>
+        <p>暂无目录</p>
         
     </div>
 </aside>
