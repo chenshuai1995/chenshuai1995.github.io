@@ -19,10 +19,27 @@
     <link rel="dns-prefetch" href="http://yoursite.com">
     <!--SEO-->
 
-<meta name="keywords" content>
+<meta name="keywords" content="Hexo">
 
 
-<meta name="description" content>
+<meta name="description" content="
+
+
+
+
+安装
+配置
+使用
+
+
+
+
+
+
+安装首先安装hexo-toc的插件，代码如下：
+1npm install hexo-toc --save
+
+配置然后，配置一下${HEXO_HOME}站点...">
 
 
 <meta name="robots" content="all">
@@ -32,6 +49,8 @@
     <!--Title-->
 
 <title>
+    
+    Hexo支持TOC效果 |
     
     Hexo
 </title>
@@ -139,53 +158,16 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    
-
-
-
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
 <article class="post">
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2019/09/29/Hexo支持TOC效果/">
-                    Hexo支持TOC效果</a>
-            </h1>
-            <div class="post-meta"> &bull;
-                <time class="post-date" datetime="" title="">
-                    2019年09月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
+    <div class="post-head">
+        <h1 id="Hexo支持TOC效果">
             
+            Hexo支持TOC效果
             
-
-
-
-
-安装
-配置
-使用
-
-
-
-
-
-
-安装首先安装hexo-toc的插件，代码如下：
-1npm install hexo-toc --save
-
-配置然后，配置一下${HEXO_HOME}站点配置文件_config.yml:
-123...
-            
-        </p>
-    </div>
-    
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
+        </h1>
+        <div class="post-meta">
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
@@ -203,235 +185,109 @@
     </span>
     
     
-</div>
-        </div>
-        <div class="post-permalink">
-            <a href="/2019/09/29/Hexo支持TOC效果/" class="btn btn-default">
-                阅读全文</a>
-        </div>
-    </footer>
-    
-</article>
-
-
-<article class="post">
-    
-    <div class="post-media">
-        <a href="/2019/09/29/测试文章/">
-            <img class="img-ajax" src="/img/loading.gif" data-src="/images/pasted-1.png" alt="Hexo发布文章">
-        </a>
-    </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2019/09/29/测试文章/">
-                    Hexo发布文章</a>
-            </h1>
-            <div class="post-meta"> &bull;
-                <time class="post-date" datetime="" title="">
-                    2019年09月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-            
-
-
-
-
-发布文章
-Hexo Admin插件管理
-
-
-
-
-
-
-
-
-
-
-
-发布文章Hexo Admin插件管理
-安装插件
-
-1npm install --save hexo-admin
-
-
-启动服务器
-
-1hexo server -d
-...
-            
-        </p>
-    </div>
-    
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a class="category-link" href="/categories/工具/">工具</a>
-    </span>
-    
     
     <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a class="tag-link" href="/tags/Hexo/">Hexo</a>
-            
-        </span>
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/09/29</span>
     </span>
     
     
 </div>
-        </div>
-        <div class="post-permalink">
-            <a href="/2019/09/29/测试文章/" class="btn btn-default">
-                阅读全文</a>
-        </div>
-    </footer>
+        
+        
+    </div>
     
+    <div class="post-body post-content">
+        <div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#an-zhuang">安装</a></li>
+<li><a href="#pei-zhi">配置</a></li>
+<li><a href="#shi-yong">使用</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+
+<h1><span id="an-zhuang">安装</span><a href="#an-zhuang" class="header-anchor"></a></h1><p>首先安装hexo-toc的插件，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+
+<h1><span id="pei-zhi">配置</span><a href="#pei-zhi" class="header-anchor"></a></h1><p>然后，配置一下${HEXO_HOME}站点配置文件_config.yml:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim $&#123;HEXO_HOME&#125;/_config.yml</span><br><span class="line"></span><br><span class="line">toc:</span><br><span class="line">  maxdepth: 3</span><br><span class="line">  class: toc</span><br><span class="line">  slugify: transliteration</span><br><span class="line">  decodeEntities: false</span><br><span class="line">  anchor:</span><br><span class="line">    position: after</span><br><span class="line">    symbol: &apos;#&apos;</span><br><span class="line">    style: header-anchor</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>symbol的#可以去掉</li>
+</ul>
+<h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor"></a></h1><p>在Markdown文章中加入TOC的占位符：以前[toc][TOC]改成下面的方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
 </article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2019/09/29/测试文章/" class="next-post btn btn-default" title='Hexo发布文章'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            Hexo发布文章</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
 
 
+</div>
 
                 </main>
                 
-                    
-<aside class="col-md-4 sidebar">
-    
-    
-<div class="widget">
-    <h3 class="title">
-        搜索
-    </h3>
-    <div id="search-form">
-        <div id="result-mask" class="hide"></div>
-        <div class="search-area">
-            
-            <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢？">
-            <button type="button" class="search-form-submit" id="search-local">
-                站内搜索</button>
-            
-            
-        </div>
-        <div id="result-wrap" class="hide">
-            <div id="search-result"></div>
-        </div>
-        <div class="hide">
-            <template id="search-tpl">
-                <div class="item">
-                    <a href="/{path}" title="{title}">
-                        <div class="title">{title}</div>
-                        <div class="content">{content}</div>
-                    </a>
-                </div>
-            </template>
-        </div>
-    </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        网站公告
-    </h3>
-    <div class="notification">
-        <p>
-    支持博客：<a href="">Star一下</a>
-</p>
-    </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        社交
-    </h3>
-    <div class="content social">
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
         
-        <a href="//github.com/chenshuai1995" rel="external nofollow" title="Github" target="_blank">
-            <i class="git fa fa-git"></i>
-        </a>
-        
-        <a href="785659165@qq.com" rel="external nofollow" title="邮箱" target="_blank">
-            <i class="envelope-o fa fa-envelope-o"></i>
-        </a>
-        
-        <a href="785659165" rel="external nofollow" title="联系QQ" target="_blank">
-            <i class="qq fa fa-qq"></i>
-        </a>
-        
-        <a href="/" rel="external nofollow" title="微信" target="_blank">
-            <i class="weixin fa fa-weixin"></i>
-        </a>
-        
-        <a href="/" rel="external nofollow" title="QQ群" target="_blank">
-            <i class="users fa fa-users"></i>
-        </a>
-        
-        <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-            <i class="feed fa fa-feed"></i>
-        </a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">使用</span></a></li></ol>
         
     </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        分类
-    </h3>
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/工具/"><i class="fa" aria-hidden="true">工具</i></a><span class="category-list-count">1</span></li></ul>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        归档
-    </h3>
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/"><i class="fa" aria-hidden="true">2019年09月</i></a><span class="archive-list-count">2</span></li></ul>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        标签云
-    </h3>
-    <div class="content tag-cloud">
-        
-        <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
-        
-    </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        友链
-    </h3>
-    <div class="content friends-link">
-        
-        <a href="https://www.baidu.com/" class="fa" target="_blank">
-            百度一下</a>
-        
-    </div>
-</div>
-
-    
 </aside>
-
                 
             </div>
         </div>
@@ -467,8 +323,6 @@ Hexo Admin插件管理
         </div>
     </div>
 </div>
-
-<script src="/js/search.js?rev=@@hash"></script>
 
 
 
