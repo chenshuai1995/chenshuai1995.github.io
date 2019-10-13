@@ -22,7 +22,27 @@
 <meta name="keywords" content>
 
 
-<meta name="description" content>
+<meta name="description" content="[TOC]
+
+
+
+
+
+Ubuntu18.04 使用Shadowsocks 科学上网
+安装shadowsocks-qt5
+配置网络代理
+火狐浏览器
+谷歌浏览器
+
+
+
+
+
+
+
+
+
+Ubuntu18....">
 
 
 <meta name="robots" content="all">
@@ -33,7 +53,7 @@
 
 <title>
     
-    Tag: Hexo |
+    Ubuntu18.04 使用Shadowsocks 科学上网 |
     
     Hexo
 </title>
@@ -142,138 +162,48 @@
         <div class="container">
             <div class="row">
                 <main class="col-md-8 main-content ">
-                    <ol class="breadcrumb">
+                    <div>
     
-    <li>
-        Hexo
-    </li>
-    
-    
-</ol>
+    <article class="post">
+    <h1 class="post-head">
+        Ubuntu18.04 使用Shadowsocks 科学上网
+    </h1>
+    <div class="post-body">
+        <p>[TOC]</p>
+<div class="toc">
 
-<article class="post">
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2019/09/29/Hexo常见命令/">
-                    Hexo常见命令</a>
-            </h1>
-            <div class="post-meta"> &bull;
-                <time class="post-date" datetime="" title="">
-                    2019年09月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-            
+<!-- toc -->
 
+<ul>
+<li><a href="#ubuntu18-04-shi-yong-shadowsocks-ke-xue-shang-wang">Ubuntu18.04 使用Shadowsocks 科学上网</a><ul>
+<li><a href="#an-zhuang-shadowsocks-qt5">安装shadowsocks-qt5</a></li>
+<li><a href="#pei-zhi-wang-luo-dai-li">配置网络代理</a><ul>
+<li><a href="#huo-hu-liu-lan-qi">火狐浏览器</a></li>
+<li><a href="#gu-ge-liu-lan-qi">谷歌浏览器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
 
+</div>
 
+<h1><span id="ubuntu18-04-shi-yong-shadowsocks-ke-xue-shang-wang">Ubuntu18.04 使用Shadowsocks 科学上网</span><a href="#ubuntu18-04-shi-yong-shadowsocks-ke-xue-shang-wang" class="header-anchor"></a></h1><h2><span id="an-zhuang-shadowsocks-qt5">安装shadowsocks-qt5</span><a href="#an-zhuang-shadowsocks-qt5" class="header-anchor"></a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:hzwhuang/ss-qt5</span><br></pre></td></tr></table></figure>
 
+<p>编辑<code>/etc/apt/sources.list.d/hzwhuang-ubuntu-ss-qt5-bionic.list</code> 文件，将<code>bionic</code>(18.04版本代号)改成<code>xenial</code>（16.04版本代号）</p>
+<p>因为shadowsocks-qt5 现在还没有提供Ubutnu18 这个版本的客户端，修改源来安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install shadowsocks-qt5</span><br></pre></td></tr></table></figure>
 
+<h2><span id="pei-zhi-wang-luo-dai-li">配置网络代理</span><a href="#pei-zhi-wang-luo-dai-li" class="header-anchor"></a></h2><h3><span id="huo-hu-liu-lan-qi">火狐浏览器</span><a href="#huo-hu-liu-lan-qi" class="header-anchor"></a></h3><p>firefox-设置-网络代理-设置如下</p>
+<p>修改为：手动配置代理：SOCKS主机：127.0.0.1，端口：1080。使用SOCKS v5方式</p>
+<h3><span id="gu-ge-liu-lan-qi">谷歌浏览器</span><a href="#gu-ge-liu-lan-qi" class="header-anchor"></a></h3><p>使用<a href="https://www.switchysharp.com/file/switchysharp-v1.10.4.zip" target="_blank" rel="noopener">proxy Switchsharp</a>插件，设置火狐浏览器类似。</p>
+<p><strong>这里有一点要注意，要在插件，也就是浏览器左上角的小地球图标上点击——设置连接，否则是不进行代理的</strong></p>
 
-
-
-
-
-1234567hexo new &amp;quot;postName&amp;quot; #新建文章hexo new page &amp;quot;pageName&amp;quot; #新建页面hexo generate #生成静态页面至pu...
-            
-        </p>
     </div>
 </article>
-
-<article class="post">
     
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2019/09/29/Hexo支持TOC效果/">
-                    Hexo支持TOC效果</a>
-            </h1>
-            <div class="post-meta"> &bull;
-                <time class="post-date" datetime="" title="">
-                    2019年09月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-            
-
-
-
-
-安装
-配置
-使用
-
-
-
-
-
-
-安装首先安装hexo-toc的插件，代码如下：
-1npm install hexo-toc --save
-
-配置然后，配置一下${HEXO_HOME}站点配置文件_config.yml:
-123...
-            
-        </p>
-    </div>
-</article>
-
-<article class="post">
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2019/09/29/测试文章/">
-                    Hexo发布文章</a>
-            </h1>
-            <div class="post-meta"> &bull;
-                <time class="post-date" datetime="" title="">
-                    2019年09月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-            
-
-
-
-
-发布文章
-Hexo Admin插件管理
-
-
-
-
-
-
-
-
-
-
-
-发布文章Hexo Admin插件管理
-安装插件
-
-1npm install --save hexo-admin
-
-
-启动服务器
-
-1hexo server -d
-...
-            
-        </p>
-    </div>
-</article>
-
-
+</div>
                 </main>
                 
                     
